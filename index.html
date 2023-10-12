@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#083644">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/8c31bff8dc.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav id="back-button" onclick="window.history.back();">
+            <i class="fa-solid fa-chevron-left"></i>
+            <p>Back</p>
+        </nav>
+        <div id="like-button">
+            <i class="fa-regular fa-heart"></i>
+        </div>
+        <div id="library-button"><i class="fa-regular fa-folder"></i></div>
+    </header>
+
+    <div id="filter">
+            <form action="" id="filter-form">
+                <input type="text" name="artist" id="artist" placeholder="Artist">
+                <select name="genre" id="genre">
+                    <option style="display: none;" value="" selected>Genre</option>
+                    <option value="rock">Rock</option>
+                    <option value="pop">Pop</option>
+                    <option value="country">Country</option>
+                    <option value="hip-hop">Hip-Hop</option>
+                    <option value="jazz">Jazz</option>
+                </select>
+                <select name="decade" id="decade">
+                    <option style="display: none;" value="" selected>Decade</option>
+                    <option value="1950-60">1950-60 рр.</option>
+                    <option value="1960-70">1960-70 рр.</option>
+                    <option value="1970-80">1970-80 рр.</option>
+                    <option value="1980-90">1980-90 рр.</option>
+                    <option value="1990-00">1990-00 рр.</option>
+                    <option value="2000-10">2000-10 рр.</option>
+                    <option value="2010-20">2010-20 рр.</option>
+                    <option value="2020-30">2020-30 рр.</option>
+                </select>
+                <select name="country" id="country">
+                    <option style="display: none;" value="" selected>Country</option>
+                    <option value="usa">USA</option>
+                    <option value="uk">UK</option>
+                    <option value="france">France</option>
+                    <option value="germany">Germany</option>
+                    <option value="ukraine">Ukraine</option>
+                </select>
+                <input type="submit" value="Search" id="filter-search">
+            </form>
+    </div>
+    <div id="items-container">
+        <div class="item" id="item-1">
+            <button type="button" id="like-button-add">
+                <i class="fa-regular fa-heart"></i>
+            </button>
+            <img src="https://i.discogs.com/GCNPRSAsHiTRxtsZj1uTFk48NDTNSh3DRt7YrpHUmMc/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNDAw/MjkwLTE1NTE1ODQ1/MzEtODczNi5qcGVn.jpeg" alt="">
+            <div class="info-container">
+                <h5>Bohemian Rhapsody</h5>
+             <h6>Queen</h6>
+                <div class="item-info">
+                 <div><p>Genre:</p><p>Rock</p></div>
+                 <div><p>Decade:</p><p>1970-80</p></div>
+                  <div><p>Country:</p><p>UK</p></div>
+                </div>
+            </div>
+            <button class="add-button" type="button">
+                <p>Add</p> <i class="fa-regular fa-plus"></i>
+            </button>
+            <button class="remove-button button-hidden">
+                <p>Remove</p> <i class="fa-solid fa-minus"></i>
+            </button>       
+        </div>
+        <div class="item" id="item-2">
+            <button type="button" id="like-button-add">
+                <i class="fa-regular fa-heart"></i>
+            </button>
+            <img src="https://i.discogs.com/GCNPRSAsHiTRxtsZj1uTFk48NDTNSh3DRt7YrpHUmMc/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNDAw/MjkwLTE1NTE1ODQ1/MzEtODczNi5qcGVn.jpeg" alt="">
+            <div class="info-container">
+                <h5>Bohemian Rhapsody</h5>
+             <h6>Queen</h6>
+                <div class="item-info">
+                 <div><p>Genre:</p><p>Rock</p></div>
+                 <div><p>Decade:</p><p>1970-80</p></div>
+                  <div><p>Country:</p><p>UK</p></div>
+                </div>
+            </div>
+            <button class="add-button" type="button">
+                <p>Add</p> <i class="fa-regular fa-plus"></i>
+            </button>
+            <button class="remove-button button-hidden">
+                <p>Remove</p> <i class="fa-solid fa-minus"></i>
+            </button>       
+        </div>
+        <div class="item" id="item-3">
+            <button type="button" id="like-button-add">
+                <i class="fa-regular fa-heart"></i>
+            </button>
+            <img src="https://i.discogs.com/GCNPRSAsHiTRxtsZj1uTFk48NDTNSh3DRt7YrpHUmMc/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNDAw/MjkwLTE1NTE1ODQ1/MzEtODczNi5qcGVn.jpeg" alt="">
+            <div class="info-container">
+                <h5>Bohemian Rhapsody</h5>
+             <h6>Queen</h6>
+                <div class="item-info">
+                 <div><p>Genre:</p><p>Rock</p></div>
+                 <div><p>Decade:</p><p>1970-80</p></div>
+                  <div><p>Country:</p><p>UK</p></div>
+                </div>
+            </div>
+            <button class="add-button" type="button">
+                <p>Add</p> <i class="fa-regular fa-plus"></i>
+            </button>
+            <button class="remove-button button-hidden">
+                <p>Remove</p> <i class="fa-solid fa-minus"></i>
+            </button>       
+        </div>
+        <div class="item" id="item-4">
+            <button type="button" id="like-button-add">
+                <i class="fa-regular fa-heart"></i>
+            </button>
+            <img src="https://i.discogs.com/GCNPRSAsHiTRxtsZj1uTFk48NDTNSh3DRt7YrpHUmMc/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNDAw/MjkwLTE1NTE1ODQ1/MzEtODczNi5qcGVn.jpeg" alt="">
+            <div class="info-container">
+                <h5>Bohemian Rhapsody</h5>
+             <h6>Queen</h6>
+                <div class="item-info">
+                 <div><p>Genre:</p><p>Rock</p></div>
+                 <div><p>Decade:</p><p>1970-80</p></div>
+                  <div><p>Country:</p><p>UK</p></div>
+                </div>
+            </div>
+            <button class="add-button" type="button">
+                <p>Add</p> <i class="fa-regular fa-plus"></i>
+            </button>
+            <button class="remove-button button-hidden">
+                <p>Remove</p> <i class="fa-solid fa-minus"></i>
+            </button>       
+        </div>
+        <div class="item" id="item-5">
+            <button type="button" id="like-button-add">
+                <i class="fa-regular fa-heart"></i>
+            </button>
+            <img src="https://i.discogs.com/GCNPRSAsHiTRxtsZj1uTFk48NDTNSh3DRt7YrpHUmMc/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNDAw/MjkwLTE1NTE1ODQ1/MzEtODczNi5qcGVn.jpeg" alt="">
+            <div class="info-container">
+                <h5>Bohemian Rhapsody</h5>
+             <h6>Queen</h6>
+                <div class="item-info">
+                 <div><p>Genre:</p><p>Rock</p></div>
+                 <div><p>Decade:</p><p>1970-80</p></div>
+                  <div><p>Country:</p><p>UK</p></div>
+                </div>
+            </div>
+            <button class="add-button" type="button">
+                <p>Add</p> <i class="fa-regular fa-plus"></i>
+            </button>
+            <button class="remove-button button-hidden">
+                <p>Remove</p> <i class="fa-solid fa-minus"></i>
+            </button>       
+        </div>
+        <div class="item" id="item-6">
+            <button type="button" id="like-button-add">
+                <i class="fa-regular fa-heart"></i>
+            </button>
+            <img src="https://i.discogs.com/GCNPRSAsHiTRxtsZj1uTFk48NDTNSh3DRt7YrpHUmMc/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNDAw/MjkwLTE1NTE1ODQ1/MzEtODczNi5qcGVn.jpeg" alt="">
+            <div class="info-container">
+                <h5>Bohemian Rhapsody</h5>
+             <h6>Queen</h6>
+                <div class="item-info">
+                 <div><p>Genre:</p><p>Rock</p></div>
+                 <div><p>Decade:</p><p>1970-80</p></div>
+                  <div><p>Country:</p><p>UK</p></div>
+                </div>
+            </div>
+            <button class="add-button" type="button">
+                <p>Add</p> <i class="fa-regular fa-plus"></i>
+            </button>
+            <button class="remove-button button-hidden">
+                <p>Remove</p> <i class="fa-solid fa-minus"></i>
+            </button>       
+        </div>
+        
+            
+        
+    </div>
+    
+    <div id="pages-container">
+        <div id="pages">
+            <p class="page-id" id="active-page" onclick="changePage(this)">1</p>
+            <p class="page-id" onclick="changePage(this)">2</p>
+            <p class="page-id" onclick="changePage(this)">3</p>
+            <p>...</p>
+            <p class="page-id" onclick="changePage(this)">10</p>
+        </div>
+    </div>
+
+    <script>
+        toggleAddAndRemoveButton();
+        toggleSavedInLibraryItemsOnPage();
+
+        function toggleAddAndRemoveButton(){
+            let items = document.querySelectorAll(".item");
+            let addButton = document.querySelectorAll(".add-button");
+            let removeButton = document.querySelectorAll(".remove-button");
+            for(let i = 0; i < items.length; i++){
+                addButton[i].addEventListener("click", function(){
+                    addButton[i].classList.toggle("button-hidden");
+                    removeButton[i].classList.toggle("button-hidden");
+                    addToLibrary(items[i].id);
+                });
+                items[i].querySelector(".remove-button").addEventListener("click", function(){
+                    addButton[i].classList.toggle("button-hidden");
+                    removeButton[i].classList.toggle("button-hidden");
+                    removeFromLibrary(items[i].id);
+                });
+            }
+        }
+
+        function isLibraryExist(){
+            if(localStorage.getItem("library") == null){
+                return false;
+            }
+            else{
+                return true;
+            }
+        }
+
+        function addToLibrary(id){
+            if (!isLibraryExist()){
+                localStorage.setItem("library", JSON.stringify([]));
+            }
+            localStorage.setItem("library", JSON.stringify(JSON.parse(localStorage.getItem("library")).concat(id)));
+        }
+
+        function removeFromLibrary(id){
+            let library = JSON.parse(localStorage.getItem("library"));
+            library.splice(library.indexOf(id), 1);
+            localStorage.setItem("library", JSON.stringify(library));
+        }
+
+        function toggleSavedInLibraryItemsOnPage(){
+            if (!isLibraryExist()){
+                return;
+            }
+            let library = JSON.parse(localStorage.getItem("library"));
+            for(let i = 0; i < library.length; i++){
+                let item = document.getElementById(library[i]);
+                item.querySelector(".add-button").classList.toggle("button-hidden");
+                item.querySelector(".remove-button").classList.toggle("button-hidden");
+            }
+        }
+
+        function changePage(element){
+            let page = `index.html?page=${element.innerHTML}`;
+            window.open(page, "_self");
+        }
+        
+        
+    </script>
+
+    <style type="text/css">
+  :root {
+  --accent-color: #083644;
+  --bg-color: #FFFFFF;
+  --gray-text-1: #6C7072;
+  --gray-text-2: #738286;
+  --accent-text: #0A2530;
+  --gray-border: #EDEEF0;
+    }
+
+    body {
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 62px;
+
+    }
+    header{
+        width: 100%;
+        top: 0;
+        position: fixed;
+        z-index: 100;
+        height: 62px;
+        background-color: var(--accent-color);
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    header *{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        align-self: center;
+    }
+    #back-button{
+        height: 50px;
+       color: var(--bg-color);
+        text-align: center;
+        margin-left: 20px;
+        margin-right: auto;
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        transition-duration: 0.1s;
+        transition-property: transform;
+        transition-timing-function: ease-in-out;
+        user-select: none;
+    }
+
+    #back-button:hover{
+        cursor: pointer;
+        transform: translate(-5px, 0px);
+        filter: brightness(1.1);
+        padding-right: 5px;
+    }
+
+    #back-button:active{
+        transform: translate(-20px, 0px);
+        filter: brightness(1.1);
+        padding-right: 20px;
+    }
+        #back-button i{
+            font-size: 18px;
+            margin: 0px;
+            align-self: center;
+            
+        }
+        #back-button p{
+            font-size: 18px;
+            margin: 10px;
+            font-weight: 400;
+            align-self: center;
+        }
+
+    
+    #like-button{
+        width: 50px;
+        height: 50px;
+        color: var(--bg-color);
+        display: inline-flex;
+        justify-content: center;
+        transition-property: filter;
+        transition-duration: 0.1s;
+        transition-timing-function: ease-in-out;
+    }
+
+    #like-button:hover{
+        cursor: pointer;
+        filter: drop-shadow(0px 0px 2px var(--gray-text-1));
+    }
+
+    #like-button:active{
+        filter: drop-shadow(0px 0px 2px var(--bg-color));
+    }
+
+    #like-button i{
+            font-size: 22px;
+            margin: 0px;
+            align-self: center;
+    }
+    
+    #library-button{
+        width: 50px;
+        height: 50px;
+        color: var(--bg-color);
+        display: inline-flex;
+        justify-content: center;
+    }
+
+    #library-button:hover{
+        cursor: pointer;
+        filter: drop-shadow(0px 0px 2px var(--gray-text-1));
+    }
+
+    #library-button:active{
+        filter: drop-shadow(0px 0px 2px var(--bg-color));
+    }
+        #library-button i{
+            font-size: 22px;
+            margin: 0px;
+            align-self: center;
+            justify-self: center;
+            
+        }
+
+        #filter{
+            display: flex;
+            width: calc(100% - 20px);
+            margin: 0px 10px;
+        }
+        #filter-form{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+           
+        }
+
+        #filter-form > *{
+            background: transparent;
+            height: 42px;
+            border: none;
+            outline: var(--gray-border) solid 1px;
+            border-radius: 4px;
+            margin: 10px;
+            color: var(--gray-text-1);
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            padding-left: 10px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background-repeat: no-repeat;
+            background-position: right center;
+            padding-right: 20px;
+            
+        }
+
+        #filter-form input::placeholder{
+            color: var(--gray-text-1);}
+
+        #filter-form select{
+        appearance: none;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='1em' viewBox='0 0 512 512'%3E%3Cpath d='M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: 16px;
+        background-position: right 10px top 50%;
+        }
+
+        #artist{
+            width: calc(100% - 20px);
+        }
+        #genre{
+            width: calc(50% - 20px);
+        }
+        #decade{
+            width: calc(50% - 20px);
+        }
+          
+        #country{
+            width: calc(100% - 20px);
+        }
+        #filter-search{
+            width: calc(100% - 20px);
+            outline: none;
+            background-color: var(--accent-color);
+            color: var(--bg-color);
+            font-weight: 500;
+            font-size: 16px;
+            align-self: center;
+            height: 44px;
+            border: none;
+            transition-duration: 0.1s;
+            transition-property: filter;
+        }
+
+        #filter-search:hover{
+            cursor: pointer;
+            filter: brightness(1.1);
+        }
+
+        #filter-search:active{
+            filter: brightness(1.2);
+        }
+
+        #items-container{
+            margin: 4px 5px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+            
+
+            .item{
+                display: flex;
+                flex-direction: column;
+                flex-basis: calc(33.33% - 10px);
+                font-family: 'Plus Jakarta Sans', sans-serif;
+                color: var(--accent-text);
+                margin: 7px 0px;
+                height: calc(169px + 129px + 44px + 10px);
+            }
+
+            
+         
+
+        /* .item{
+            width: 169px;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: var(--accent-text);
+            margin: 7px 0px;
+        } */
+
+        
+
+        .item img{
+            width: 169px;
+            height: 169px;
+            border-radius: 8px;
+        }
+
+        .item h5{
+            font-size: 14px;
+            font-weight: 700;
+            margin: 10px 0px;
+            margin: 0px;
+        }
+
+        .item h6{
+            font-size: 14px;
+            font-weight: 500;
+            margin: 4px 0px;
+            color: var(--accent-text);
+            
+        }
+
+        .item .info-container{
+            margin-top: 10px;
+        }
+
+        .item-info{
+            margin: 7px 0px;
+        }
+
+        .item-info div{
+            display: inline-flex;
+            width: 100%;
+            flex-wrap: nowrap;
+            
+        }
+
+        .item-info div p{
+            width: fit-content;
+            margin: 2px 0px;
+            font-weight: 400;
+            font-size: 14px;
+            text-wrap: nowrap;
+            
+        }
+
+        .item-info div p:first-child{
+            color: var(--gray-text-2);
+            margin-right: 3px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .item-info div p:last-child{
+            color: var(--accent-text);
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .item .add-button, .item .remove-button{
+            width: 100%;
+            height: 44px;
+            background-color: var(--accent-text);
+            border: none;
+            border-radius: 4px;
+            outline: none;
+            color: var(--bg-color);
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            display: inline-flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            transition-duration: 0.1s;
+            transition-property: filter;
+            z-index: 10;
+            transition-property: opacity;
+            transition-duration: 0.2s;
+            flex-shrink: 0;
+        }
+
+        .item .add-button:hover, .item .remove-button:hover{
+            cursor: pointer;
+            filter: brightness(1.1);
+        }
+
+        .item .add-button p, .item .remove-button p{
+            margin: 0px 3px;
+            font-size: 16px;
+            font-weight: 500;
+            
+        }
+
+        .item .remove-button{
+            background-color: var(--gray-border);
+            color: var(--accent-text);
+            transform: translate(0px, -44px);
+        }
+
+        .item .button-hidden{
+            opacity: 0;
+            pointer-events: none;
+            z-index: -1;
+            
+        }
+
+        .item #like-button-add{
+            position:absolute;
+            margin-top: 8px;
+            margin-left: 8px;
+            width: 24px;
+            height: 24px;
+            background: var(--bg-color);
+            color: var(--accent-text);
+            border: none;
+            border-radius: 4px;
+            outline: none;
+            display: inline-flex;
+            justify-content: center;
+        }
+
+        .item #like-button-add:hover{
+            cursor: pointer;
+            filter: brightness(1.1);
+        }
+
+        .item #like-button-add:active{
+            filter: brightness(1.2);
+        }
+
+        .item #like-button-add i{
+            font-size: 16px;
+            margin: 0px;
+            align-self: center;
+
+        }
+
+        @media  screen and (min-width: 100vh){
+                .item{
+                    flex-direction: row;
+                    flex-basis: calc(33.33% - 10px);
+                    margin: 7px 0px;
+                    flex-wrap: wrap;
+                    height: calc(169px + 44px + 10px);
+                }
+
+                .item .info-container{
+                    width: calc(100% - 169px - 10px);
+                    margin-left: 10px;
+                    margin-top: 0px;
+                    height: 169px;
+                }
+
+                .item .add-button, .item .remove-button{
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+
+                .item .remove-button{
+                    transform: translate(0px, -64px) !important;
+                }
+
+                #artist{
+                    width: calc(50% - 30px);
+                    order: 1;
+                    padding-right: 0px;
+                }
+                #genre{
+                    order: 3;
+                }
+                #decade{
+                    order: 4;
+                }
+                #country{
+                    width: calc(50% - 20px);
+                    order: 2;
+                }
+                #filter-search{
+                    order: 5;
+                }
+                
+            }
+
+
+        #pages-container{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin: 20px 0px;
+        }
+
+        #pages{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            height: 30px;
+            width:auto;
+            justify-content: space-evenly;
+            
+        }
+
+        #pages p{
+            margin: 0;
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--gray-text-1);
+            background: transparent;
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            transition-duration: 0.1s;
+            transition-property: filter;
+            user-select: none;
+        }
+
+        #pages #active-page{
+            color: var(--bg-color);
+            background: var(--accent-text);
+        }
+
+        #pages .page-id:hover{
+            cursor: pointer;
+            filter: brightness(1.2);
+        }
+
+    </style>
+
+    
+</body>
+</html>
